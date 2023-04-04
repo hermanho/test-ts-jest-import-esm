@@ -1,0 +1,37 @@
+{
+  "name": "test-ts-jest-import-esm",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node build.js && node dist/main.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "author": "",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "esbuild": "^0.17.15",
+    "esbuild-plugin-tsc": "^0.3.1",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "node-countries": "^2.2.0",
+    "serialize-error": "^11.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.ts$": [
+        "ts-jest"
+      ]
+    },
+    "testEnvironment": "node"
+  }
+}
