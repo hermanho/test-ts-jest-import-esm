@@ -15,6 +15,7 @@
     "noFallthroughCasesInSwitch": false,
     "resolveJsonModule": true,
     "moduleResolution": "node",
+    "noEmit": true,
     "allowJs": true
   },
   "exclude": ["node_modules", "test", "dist"]
